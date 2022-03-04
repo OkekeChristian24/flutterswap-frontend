@@ -21,9 +21,11 @@ const useFarmsWithBalance = () => {
     const fetchBalances = async () => {
       const calls = farmsConfig.map((farm) => ({
         address: getMasterChefAddress(),
-        name: 'pendingCake',
+        name: 'pendingFswap',
         params: [farm.pid, account],
       }))
+
+      console.log("calls: ", calls)
 
       const rawResults = await multicall(masterChefABI, calls)
       const results = farmsConfig.map((farm, index) => ({ ...farm, balance: new BigNumber(rawResults[index]) }))

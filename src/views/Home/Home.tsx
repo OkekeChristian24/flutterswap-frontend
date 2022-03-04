@@ -93,7 +93,7 @@ const Home: React.FC = () => {
         <Heading as="h1" scale="xl" mb="24px" color="primaryDark">
           {t('FlutterSwap')}
         </Heading>
-        <Text color="tertiary">{t('The #1 AMM and yield farm on Bitcoin Asset Chain.')}</Text>
+        <Text color="tertiary">{t('Bringing the true meaning of DeFi to you.')}</Text>
       </Hero>
       <div>
         <Cards>

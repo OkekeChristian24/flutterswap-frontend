@@ -13,15 +13,20 @@ const useAllEarnings = () => {
 
   useEffect(() => {
     const fetchAllBalances = async () => {
-      const calls = farmsConfig.map((farm) => ({
-        address: getMasterChefAddress(),
-        name: 'pendingCake',
-        params: [farm.pid, account],
-      }))
-
-      const res = await multicall(masterChefABI, calls)
-
-      setBalance(res)
+      try {
+        
+        const calls = farmsConfig.map((farm) => ({
+          address: getMasterChefAddress(),
+          name: 'pendingFswap',
+          params: [farm.pid, account],
+        }))
+  
+        const res = await multicall(masterChefABI, calls)
+  
+        setBalance(res)
+      } catch (error) {
+        console.error(error)  
+      }
     }
 
     if (account) {
