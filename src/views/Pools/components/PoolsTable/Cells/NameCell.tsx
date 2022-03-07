@@ -50,7 +50,7 @@ const NameCell: React.FC<NameCellProps> = ({ pool }) => {
     subtitle = t('Automatic restaking')
   } else if (isManualCakePool) {
     title = t('Manual CAKE')
-    subtitle = `${t('Earn')} CAKE ${t('Stake').toLocaleLowerCase()} CAKE`
+    subtitle = `${t('Earn')} FSWAP ${t('Stake').toLocaleLowerCase()} CAKE`
   }
 
   return (

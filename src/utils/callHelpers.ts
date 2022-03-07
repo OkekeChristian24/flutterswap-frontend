@@ -140,7 +140,7 @@ const WBNB_TOKEN = new Token(chainId, tokens.wbnb.address[chainId], 18)
 const CAKE_BNB_TOKEN = new Token(chainId, getAddress(cakeBnbFarm.lpAddresses), 18)
 
 /**
- * Returns the total CAKE staked in the CAKE-BNB LP
+ * Returns the total FSWAP staked in the CAKE-BNB LP
  */
 export const getUserStakeInCakeBnbLp = async (account: string, block?: number) => {
   try {
@@ -170,7 +170,7 @@ export const getUserStakeInCakeBnbLp = async (account: string, block?: number) =
 }
 
 /**
- * Gets the cake staked in the main pool
+ * Gets the FSWAP staked in the main pool
  */
 export const getUserStakeInCakePool = async (account: string, block?: number) => {
   try {
@@ -180,7 +180,7 @@ export const getUserStakeInCakePool = async (account: string, block?: number) =>
 
     return getBalanceAmount(new BigNumber(response.amount))
   } catch (error) {
-    console.error('Error getting stake in CAKE pool', error)
+    console.error('Error getting stake in FSWAP pool', error)
     return BIG_ZERO
   }
 }

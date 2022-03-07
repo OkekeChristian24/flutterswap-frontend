@@ -50,9 +50,14 @@ export const usePollFarmsData = (includeArchive = false) => {
 }
 
 /**
+ * On Pancakeswap
  * Fetches the "core" farm data used globally
  * 251 = CAKE-BNB LP
  * 252 = BUSD-BNB LP
+ * 
+ * On Flutterswap
+ * 1 = FSWAP-BNB LP
+ * 2 = BUSD-BNB LP
  */
 export const usePollCoreFarmData = () => {
   const dispatch = useAppDispatch()
@@ -60,7 +65,7 @@ export const usePollCoreFarmData = () => {
   const web3 = getWeb3NoAccount()
 
   useEffect(() => {
-    dispatch(fetchFarmsPublicDataAsync([251, 252]))
+    dispatch(fetchFarmsPublicDataAsync([1, 2]))
   }, [dispatch, fastRefresh, web3])
 }
 

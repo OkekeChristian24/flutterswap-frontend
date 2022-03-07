@@ -30,7 +30,7 @@ const CakeStats = () => {
     <StyledCakeStats>
       <CardBody>
         <Heading scale="xl" mb="24px">
-          {t('Cake Stats')}
+          {t('Fswap Stats')}
         </Heading>
         <Row>
           <Text fontSize="14px">{t('Total Fswap Supply')}</Text>

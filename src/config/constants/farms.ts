@@ -7,34 +7,34 @@ const farms: FarmConfig[] = [
    */
   {
     pid: 0,
-    lpSymbol: 'CAKE',
+    lpSymbol: 'FSWAP',
     lpAddresses: {
-      97: '0x9C21123D94b93361a29B2C2EFB3d5CD8B17e0A9e',
+      97: '',
       56: '0x078D1b73bbc94C83bA2371A164761A35a66b8612',
     },
-    token: tokens.syrup,
+    token: tokens.soup,
     quoteToken: tokens.wbnb,
   },
   {
     pid: 1,
-    lpSymbol: 'CAKE-BNB LP',
+    lpSymbol: 'FSWAP-BNB LP',
     lpAddresses: {
       97: '',
       56: '0xCCA18B47A0Ec8579B53a084b96e3416deFE14574',
     },
-    token: tokens.cake,
+    token: tokens.fswap,
     quoteToken: tokens.wbnb,
   },
-//   {
-//     pid: 252,
-//     lpSymbol: 'BUSD-BNB LP',
-//     lpAddresses: {
-//       97: '',
-//       56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
-//     },
-//     token: tokens.busd,
-//     quoteToken: tokens.wbnb,
-//   },
+  {
+    pid: 2,
+    lpSymbol: 'BUSD-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0xb50D99f83FAa68634F3026E2E0dcDf00045d3B36',
+    },
+    token: tokens.busd,
+    quoteToken: tokens.wbnb,
+  },
 //   /**
 //    * V3 by order of release (some may be out of PID order due to multiplier boost)
 //    */

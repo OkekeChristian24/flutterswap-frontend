@@ -3,14 +3,14 @@ const tokens = {
     symbol: 'BNB',
     projectLink: 'https://www.binance.com/',
   },
-  cake: {
-    symbol: 'CAKE',
+  fswap: {
+    symbol: 'Fswap',
     address: {
       56: '0x078D1b73bbc94C83bA2371A164761A35a66b8612',
-      97: '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
+      97: '',
     },
     decimals: 18,
-    projectLink: 'https://pancakeswap.finance/',
+    projectLink: 'https://flutterswap.finance/',
   },
   txl: {
     symbol: 'TXL',
@@ -579,11 +579,11 @@ const tokens = {
     decimals: 18,
     projectLink: 'https://compound.finance/',
   },
-  syrup: {
-    symbol: 'SYRUP',
+  soup: {
+    symbol: 'SOUP',
     address: {
-      56: '0x009cF7bC57584b7998236eff51b98A168DceA9B0',
-      97: '0xfE1e507CeB712BDe086f3579d2c03248b2dB77f9',
+      56: '0xBBaEB2aEfbbb25542170Cb6209f235A8850a16De',
+      97: '',
     },
     decimals: 18,
     projectLink: 'https://pancakeswap.finance/',
